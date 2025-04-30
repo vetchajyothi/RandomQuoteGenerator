@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Random Quote Generator</title>
+  </head>
+  <body>
+    <h1>Random Quote Generator</h1>
+    {% if quote %}
+    <blockquote>
+      <p>"{{ quote.text }}"</p>
+      <footer>— {{ quote.author }}</footer>
+    </blockquote>
+    <a href="/">Get Another Quote</a>
+    {% else %}
+    <p>No quotes found.</p>
+    {% endif %}
+  </body>
+</html>
